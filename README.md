@@ -1,25 +1,25 @@
 # Nome do projeto
 
-`CURSO: Coloque o nome do curso aqui, sem abreviações`
+CURSO: Tecnologia em Análise e desenvolvimento de sistemas 
 
-`DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
+DISCIPLINA: Trabalho Interdisciplinar: Aplicações Web 
 
-`Xº semestre/ANO`
+1º semestre/ANO 2025
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+Objetivo do projeto é proporcionar facilidade e esperança para cidadãos que tem alguem proximo desaparecido, funções para denunciar casos de desaparecimento ou alertar que alguem foi encontrado, sendo possivel colocar fotos e informações sobre a pessoa. O projeto visa uma possibilidade de espaço para desaparecimentos de petz. 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Lucas Marinho Blon Rocha
+* Matheus Souto dos Santos
+* João Witor da Silva Moura	
+* Júlio César Matos Medeiros Filho	
+* Lucas Vinicius de Castro Oliveira	
 * Nome completo do aluno 6
 
 ## Professor
 
-* Nome completo do(a) professor(a)
+* Jardell Fillipe da Silva	
 
 ## Instruções de utilização
 

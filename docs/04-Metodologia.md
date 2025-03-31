@@ -3,7 +3,17 @@
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+Organização da Equipe e Divisão de Papéis
+Gerente de Projeto: Responsável pela coordenação geral e cronograma.
+Designer de ui e ux: Responsável pela criação da interface e experiência do usuário.
+Desenvolvedor Frontend: Responsável pela implementação da interface.
+Desenvolvedor Back-end: Responsável pela lógica do servidor e banco de dados.
+Tester: Responsável por garantir a qualidade e funcionalidade da plataforma.
+Consultor Legal: Responsável por garantir que a plataforma esteja em conformidade com as leis de privacidade e proteção de dados.
+Quadro de Controle de Tarefas - Kanban
+A Fazer: Listagem de tarefas pendentes, como desenvolvimento de funcionalidades e design de telas.
+Em Progresso: Tarefas atualmente em desenvolvimento, como testes de usabilidade e integração de sistemas.
+Concluído: Tarefas finalizadas e testadas, prontas para serem lançadas.
 
 ## Relação de ambientes de trabalho
 

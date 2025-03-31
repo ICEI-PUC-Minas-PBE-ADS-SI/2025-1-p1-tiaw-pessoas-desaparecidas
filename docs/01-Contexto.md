@@ -1,13 +1,10 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O projeto visa desenvolver um software dedicado à busca e localização de pessoas desaparecidas, utilizando tecnologia para conectar familiares, voluntários e autoridades. A plataforma pretende facilitar a disseminação de informações e aumentar a eficiência nas buscas.
 
 ## Problema
-Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
+O aumento no número de pessoas desaparecidas como é dito no otempo Betim[1] é uma questão alarmante que afeta famílias e comunidades. A falta de um sistema centralizado e acessível para reportar e buscar informações sobre desaparecidos dificulta a resolução desses casos.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
 
 > **Links úteis**:
 > - [Objetivos, problema de pesquisa e justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
@@ -16,25 +13,24 @@ O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permit
 
 ## Objetivos
 
-Aqui, você deve descrever os objetivos do trabalho, indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
-
-Além disso, apresente alguns (pelo menos 3) objetivos específicos, dependendo de onde você pretende concentrar sua prática investigativa ou como deseja aprofundar seu trabalho.
+O objetivo do projeto é criar uma ferramenta que permita o registro, acompanhamento e compartilhamento de informações sobre pessoas desaparecidas, promovendo uma rede de apoio entre a sociedade e as forças de segurança.
+O projeto visa abrangir o territorio de Betim,mg.
+O projeto será concentrado no auxilio de buscas de pessoas, sendo possivel futuramente abrangir animais.
+O projeto será publico para todos cidadãos de Betim.
  
 > **Links úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A criação deste software é essencial para enfrentar a crescente problemática dos desaparecimentos[1], proporcionando um meio eficaz de comunicação e ajuda. Isso não apenas ajuda na localização de pessoas, mas também oferece suporte emocional às famílias afetadas.
 
 > **Links úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação, mas sim oferecer uma visão detalhada do perfil de cada grupo de usuários. Isso inclui informações sobre seu nível de conhecimento prévio, familiaridade com tecnologia, e suas relações hierárquicas ou contextos de uso. Dessa forma, será possível entender melhor as necessidades e expectativas dos diferentes tipos de usuários, garantindo uma experiência mais eficiente e adaptada.
+O público-alvo inclui familiares de pessoas desaparecidas, organizações não governamentais, voluntários e autoridades de segurança pública. A plataforma será projetada para ser acessível a todos, garantindo que qualquer pessoa possa contribuir para a busca.
 
 > **Links úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
