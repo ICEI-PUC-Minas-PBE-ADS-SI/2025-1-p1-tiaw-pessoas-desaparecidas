@@ -51,12 +51,10 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 ###  Divisão de papéis
 
 
-> A equipe utiliza o Scrum como base para definição do processo de desenvolvimento. [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
-
 - Scrum Master: Lucas Marinho Blon Rocha
 - Product Owner: Matheus Souto dos Santos
-- Equipe de Desenvolvimento: nomes de todos os membros da equipe, pois todos os membros deverão implementar no mínimo duas telas/funcionalidades.
-- Equipe de Design: nomes dos membros da equipe que trabalharão com design.
+- Equipe de Desenvolvimento: Lucas Marinho Blon Rocha, Matheus Souto dos Santos, João Witor da Silva Moura, Júlio César Matos Medeiros Filho, Lucas Vinicius de Castro Oliveira	
+- Equipe de Design:Lucas Marinho Blon Rocha, Matheus Souto dos Santos, João Witor da Silva Moura, Júlio César Matos Medeiros Filho, Lucas Vinicius de Castro Oliveira	
 
 > **Links úteis**:
 > - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
@@ -81,18 +79,4 @@ Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e 
 
 ### Ferramentas
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-Liste todas as ferramentas que foram empregadas no projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) editor de código, (2) ferramentas de comunicação, (3) ferramentas de diagramação, (4) plataformas de hospedagem, entre outras.
-
-⚠️ EXEMPLO ⚠️ os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
-
-| Ambiente                            | Plataforma                         | Link de acesso                       |
-|-------------------------------------|------------------------------------|--------------------------------------|
-| Processo de Design Thinking         | Miro                               | https://....   ⚠️ EXEMPLO ⚠️        |
-| Repositório de código fonte         | GitHub                             | https://....   ⚠️ EXEMPLO ⚠️        |
-| Documentos do projeto               | GitHub                             | http://....    ⚠️ EXEMPLO ⚠️        |
-| Gerenciamento do projeto            | GitHub Projects                    | http://....    ⚠️ EXEMPLO ⚠️        |
-| Projeto de interface                | Figma                              | http://....    ⚠️ EXEMPLO ⚠️        |
-| Hospedagem                          | Vercel                             | http://....    ⚠️ EXEMPLO ⚠️        |
- 
+ARTEFATOS DO PROJETO: ![alt text](images/ARTEFATOS.png)

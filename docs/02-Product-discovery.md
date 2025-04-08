@@ -2,14 +2,12 @@
 
 <span style="color:red">Pré-requisitos: <a href="01-Contexto.md"> Documentação de contexto</a></span>
 
-✅ [Documentação de Design Thinking (MIRO)](files/processo-dt.pdf)
-
 ## Etapa de entendimento
 
-> * **Matriz CSD**:  também conhecida como Matriz de Alinhamento, trata-se de uma ferramenta utilizada no Design Thinking para organizar informações, facilitando a tomada de decisões e a solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que permite identificar e entender o grupo de pessoas e entidades que devem ser analisados e consultados para obter uma visão mais ampla do problema;
-> * **Entrevistas qualitativas**: uma série de entrevistas qualitativas a fim de validar suposições e esclarecer dúvidas junto aos principais envolvidos;
-> * **Highlights de pesquisa**: um compilado das informações levantadas durante as entrevistas realizadas.
+> * **Matriz CSD**: ![alt text](<images/MATRIZ CSD.png>)
+> * **Mapa de stakeholders**:  ![alt text](images/MAPA.png)
+> * **Entrevistas qualitativas**: ![alt text](images/ENTREVISTA1.png), ![alt text](images/ENTREVISTA2.png), ![alt text](images/ENTREVISTA3.png)
+> * **Highlights de pesquisa**: ![alt text](images/HIGHLIGHT1.png), ![alt text](images/HIGHLIGHT2.png), ![alt text](images/HIGHLIGHT3.png)
 
 > **Links úteis**:
 > - [Mapa de stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
@@ -17,16 +15,9 @@
 ## Etapa de definição
 
 ### Personas
-
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Deve-se relacionar as personas identificadas no projeto, juntamente com os respectivos mapas de empatia. É importante enumerar e descrever de maneira precisa e personalizada todos os principais envolvidos na solução pretendida.
-
-
-![Exemplo de persona](images/exemplo-persona.png)
-
+PERSONA 1: ![alt text](images/PERSONA1.png) 
+PERSONA 2: ![alt text](images/PERSONA2.png) 
+PERSONA 3: ![alt text](images/PERSONA3.png)
 
 > **Links úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
