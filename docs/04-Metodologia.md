@@ -4,7 +4,7 @@
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
 
 Organização da Equipe e Divisão de Papéis
-Gerente de Projeto: Responsável pela coordenação geral e cronograma.
+Gerente de Projeto: Lucas Marinho Blon Rocha
 Designer de ui e ux: Responsável pela criação da interface e experiência do usuário.
 Desenvolvedor Frontend: Responsável pela implementação da interface.
 Desenvolvedor Back-end: Responsável pela lógica do servidor e banco de dados.
@@ -20,8 +20,6 @@ Concluído: Tarefas finalizadas e testadas, prontas para serem lançadas.
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
 
 ## Controle de versão
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 
 A ferramenta de controle de versão adotada no projeto foi o [Git](https://git-scm.com/), sendo que o [GitHub](https://github.com) foi utilizado para hospedagem do repositório.
 
@@ -52,12 +50,11 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ###  Divisão de papéis
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 
 > A equipe utiliza o Scrum como base para definição do processo de desenvolvimento. [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
 
-- Scrum Master: nome de um membro da equipe, principal responsável pela gestão do projeto.
-- Product Owner: nome de um membro da equipe, representante dos interesses de todos os envolvidos (stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
+- Scrum Master: Lucas Marinho Blon Rocha
+- Product Owner: Matheus Souto dos Santos
 - Equipe de Desenvolvimento: nomes de todos os membros da equipe, pois todos os membros deverão implementar no mínimo duas telas/funcionalidades.
 - Equipe de Design: nomes dos membros da equipe que trabalharão com design.
 

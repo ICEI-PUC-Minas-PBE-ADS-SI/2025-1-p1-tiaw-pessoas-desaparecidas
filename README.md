@@ -15,7 +15,6 @@ Objetivo do projeto é proporcionar facilidade e esperança para cidadãos que t
 * João Witor da Silva Moura	
 * Júlio César Matos Medeiros Filho	
 * Lucas Vinicius de Castro Oliveira	
-* Nome completo do aluno 6
 
 ## Professor
 
