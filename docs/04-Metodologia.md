@@ -5,14 +5,12 @@
 
 Organização da Equipe e Divisão de Papéis
 Gerente de Projeto: Lucas Marinho Blon Rocha
-Designer de ui e ux: Responsável pela criação da interface e experiência do usuário.
-Desenvolvedor Frontend: Responsável pela implementação da interface.
-Desenvolvedor Back-end: Responsável pela lógica do servidor e banco de dados.
-Tester: Responsável por garantir a qualidade e funcionalidade da plataforma.
-Consultor Legal: Responsável por garantir que a plataforma esteja em conformidade com as leis de privacidade e proteção de dados.
+Designer de ui e ux: Lucas Marinho Blon Rocha/ Matheus Souto 
+Desenvolvedor Frontend: Lucas Marinho Blon Rocha
+Desenvolvedor Back-end: Guilherme Cândido
+Tester: Lucas Vinicius
+Consultor Legal: Lucas Vinicius
 Quadro de Controle de Tarefas - Kanban
-A Fazer: Listagem de tarefas pendentes, como desenvolvimento de funcionalidades e design de telas.
-Em Progresso: Tarefas atualmente em desenvolvimento, como testes de usabilidade e integração de sistemas.
 Concluído: Tarefas finalizadas e testadas, prontas para serem lançadas.
 
 ## Relação de ambientes de trabalho
@@ -53,8 +51,8 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 - Scrum Master: Lucas Marinho Blon Rocha
 - Product Owner: Matheus Souto dos Santos
-- Equipe de Desenvolvimento: Lucas Marinho Blon Rocha, Matheus Souto dos Santos, João Witor da Silva Moura, Júlio César Matos Medeiros Filho, Lucas Vinicius de Castro Oliveira	
-- Equipe de Design:Lucas Marinho Blon Rocha, Matheus Souto dos Santos, João Witor da Silva Moura, Júlio César Matos Medeiros Filho, Lucas Vinicius de Castro Oliveira	
+- Equipe de Desenvolvimento: Lucas Marinho Blon Rocha, Matheus Souto dos Santos, Guilherme Cândido Vidulino, Lucas Vinicius de Castro Oliveira	
+- Equipe de Design: Lucas Marinho Blon Rocha, Matheus Souto dos Santos, Guilherme Cândido Vidulino, Lucas Vinicius de Castro Oliveira		
 
 > **Links úteis**:
 > - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
