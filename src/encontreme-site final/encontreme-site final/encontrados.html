@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pessoas Encontradas - EncontreMe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-map-marker-alt text-primary fs-3 me-2"></i>
+                <span class="fw-bold fs-3">EncontreMe</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="procurar.html">Procurar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="cadastrar.html">Cadastrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium" href="encontrados.html">Encontrados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="casos-resolvidos.html">Casos Resolvidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary fw-medium" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        <!-- Banner -->
+        <div class="alert alert-success d-flex align-items-center mb-4">
+            <i class="fas fa-check-circle me-2 fs-4"></i>
+            <div>
+                <h5 class="alert-heading mb-1">PESSOAS ENCONTRADAS</h5>
+                <p class="mb-0">Histórias de sucesso que nos motivam a continuar ajudando famílias.</p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="fw-bold">Pessoas Encontradas</h1>
+            <div class="d-flex gap-2">
+                <span class="badge bg-success fs-6" id="total-found-count">0 encontradas</span>
+            </div>
+        </div>
+
+        <!-- Filtros -->
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-control" id="searchInput" placeholder="Pesquisar por nome">
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <select class="form-select" id="locationFilter">
+                            <option value="">Filtrar por Localização</option>
+                            <option value="Centro">Centro</option>
+                            <option value="Petrolândia">Petrolândia</option>
+                            <option value="Novo Guarujá">Novo Guarujá</option>
+                            <option value="Imbirugu">Imbirugu</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select" id="monthFilter">
+                            <option value="">Filtrar por Mês</option>
+                            <option value="2024-01">Janeiro 2024</option>
+                            <option value="2023-12">Dezembro 2023</option>
+                            <option value="2023-11">Novembro 2023</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select" id="sortFilter">
+                            <option value="recent">Mais Recentes</option>
+                            <option value="oldest">Mais Antigos</option>
+                            <option value="name">Nome A-Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resultados -->
+        <div class="row g-4" id="foundResults">
+            
+        </div>
+
+       
+        <div id="loading" class="text-center py-5">
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Carregando...</span>
+            </div>
+            <p class="mt-3 text-muted">Carregando pessoas encontradas...</p>
+        </div>
+
+        <!-- Mensagem se nao tiver resultados -->
+        <div id="noResults" class="text-center py-5 d-none">
+            <i class="fas fa-search fs-1 text-muted mb-3"></i>
+            <h4 class="text-muted">Nenhuma pessoa encontrada</h4>
+            <p class="text-muted">Tente ajustar os filtros de busca</p>
+        </div>
+
+       
+        <div class="mt-5">
+            <h3 class="fw-bold mb-4 text-center">Histórias de Sucesso</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-success border-2 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-heart text-success fs-1 mb-3"></i>
+                            <h5 class="fw-bold text-success">Reunião Familiar</h5>
+                            <p class="text-muted">Mais de 600 famílias foram reunidas através da nossa plataforma.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-info border-2 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users text-info fs-1 mb-3"></i>
+                            <h5 class="fw-bold text-info">Colaboração</h5>
+                            <p class="text-muted">A comunidade é fundamental para o sucesso dos nossos casos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-warning border-2 h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock text-warning fs-1 mb-3"></i>
+                            <h5 class="fw-bold text-warning">Rapidez</h5>
+                            <p class="text-muted">Tempo médio de localização de apenas 8 dias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-map-marker-alt fs-4 me-2"></i>
+                        <span class="fs-5 fw-bold">EncontreMe</span>
+                    </div>
+                    <p class="text-light">Conectando famílias e ajudando a encontrar pessoas desaparecidas.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-semibold mb-3">Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="procurar.html" class="text-light text-decoration-none">Procurar</a></li>
+                        <li><a href="cadastrar.html" class="text-light text-decoration-none">Cadastrar</a></li>
+                        <li><a href="sobre.html" class="text-light text-decoration-none">Sobre</a></li>
+                        <li><a href="casos-resolvidos.html" class="text-light text-decoration-none">Casos Resolvidos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-semibold mb-3">Emergência</h5>
+                    <div class="text-light">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:190" class="text-light text-decoration-none">Polícia: 190</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center text-light">
+                <p>&copy; 2025 EncontreMe. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/encontrados.js"></script>
+</body>
+</html>
