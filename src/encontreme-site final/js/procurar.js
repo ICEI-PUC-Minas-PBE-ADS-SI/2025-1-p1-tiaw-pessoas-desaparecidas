@@ -14,7 +14,7 @@ const apiRequest = async (url) => {
 
 const API_CONFIG = {
   endpoints: {
-    pessoasDesaparecidas: "https://api.example.com/pessoas-desaparecidas",
+    pessoasDesaparecidas: "http://localhost:3000/pessoas-desaparecidas",
   },
 }
 
@@ -43,7 +43,7 @@ async function carregarPessoasDesaparecidas() {
     exibirResultados()
   } catch (erro) {
     console.error("Erro ao carregar dados:", erro)
-    // Fallback para localStorage
+    
     const pessoasArmazenamentoLocal = JSON.parse(localStorage.getItem("pessoas-desaparecidas") || "[]")
     todasPessoas = pessoasArmazenamentoLocal
     pessoasFiltradas = [...todasPessoas]
@@ -86,7 +86,7 @@ function filtrarResultados() {
   exibirResultados()
 }
 
-// Atualizar a função exibirResultados para usar os nomes corretos das propriedades
+// função exibirResultados
 function exibirResultados() {
   const recipienteResultados = document.getElementById("resultados-busca")
   const divSemResultados = document.getElementById("sem-resultados")
@@ -116,7 +116,7 @@ function exibirResultados() {
     )
     .join("")
 
-  // Adicionar animação de aparecer
+
   recipienteResultados.querySelectorAll(".card").forEach((cartao, indice) => {
     cartao.style.animationDelay = `${indice * 0.1}s`
     cartao.classList.add("aparecer")
