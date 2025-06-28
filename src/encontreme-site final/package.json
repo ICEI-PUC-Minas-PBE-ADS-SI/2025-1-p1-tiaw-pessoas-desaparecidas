@@ -1,8 +1,22 @@
 {
-  "name": "my-v0-project",
-  "version": "0.1.0",
-  "private": true,
+  "name": "encontreme-vercel",
+  "version": "1.0.0",
+  "description": "Sistema EncontreMe no Vercel",
+  "main": "index.html",
   "scripts": {
-    "build": "echo 'no build script'"
+    "start": "vercel dev",
+    "dev": "vercel dev",
+    "build": "echo 'Build concluído'"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }

@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 10
+    }
+  },
+  "regions": ["gru1"],
+  "github": {
+    "autoAlias": false
+  }
+}

@@ -1,7 +1,22 @@
-// Funcionalidade de busca
+// JavaScript para funcionalidade de busca
 
 let todasPessoas = []
 let pessoasFiltradas = []
+
+// Declare apiRequest and API_CONFIG variables
+const apiRequest = async (url) => {
+  const response = await fetch(url)
+  if (!response.ok) {
+    throw new Error("Network response was not ok")
+  }
+  return await response.json()
+}
+
+const API_CONFIG = {
+  endpoints: {
+    pessoasDesaparecidas: "https://api.example.com/pessoas-desaparecidas",
+  },
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   carregarPessoasDesaparecidas()
@@ -11,31 +26,24 @@ document.addEventListener("DOMContentLoaded", () => {
 // Atualizar a função carregarPessoasDesaparecidas
 async function carregarPessoasDesaparecidas() {
   try {
-    // Carregar dados do servidor
-    const resposta = await fetch("http://localhost:3000/pessoas-desaparecidas")
-    const pessoasServidor = await resposta.json()
+    // Usar nova configuração da API
+    const pessoasServidor = await apiRequest(API_CONFIG.endpoints.pessoasDesaparecidas)
 
-    // Carregar dados do armazenamento local (pessoas cadastradas via formulário)
+    // Carregar dados do armazenamento local
     const pessoasArmazenamentoLocal = JSON.parse(localStorage.getItem("pessoas-desaparecidas") || "[]")
 
-    // Combinar os dados, removendo duplicatas por ID
+    // Combinar os dados
     const mapaPessoas = new Map()
-
-    // Adicionar pessoas do servidor
     pessoasServidor.forEach((pessoa) => mapaPessoas.set(pessoa.id, pessoa))
-
-    // Adicionar pessoas do armazenamento local (sobrescreve se ID já existe)
     pessoasArmazenamentoLocal.forEach((pessoa) => mapaPessoas.set(pessoa.id, pessoa))
 
-    // Converter Map de volta para array
     todasPessoas = Array.from(mapaPessoas.values())
     pessoasFiltradas = [...todasPessoas]
 
     exibirResultados()
   } catch (erro) {
     console.error("Erro ao carregar dados:", erro)
-
-    // Se falhar, tentar carregar apenas do armazenamento local
+    // Fallback para localStorage
     const pessoasArmazenamentoLocal = JSON.parse(localStorage.getItem("pessoas-desaparecidas") || "[]")
     todasPessoas = pessoasArmazenamentoLocal
     pessoasFiltradas = [...todasPessoas]
@@ -78,7 +86,7 @@ function filtrarResultados() {
   exibirResultados()
 }
 
-// Atualizar a função exibirResultados
+// Atualizar a função exibirResultados para usar os nomes corretos das propriedades
 function exibirResultados() {
   const recipienteResultados = document.getElementById("resultados-busca")
   const divSemResultados = document.getElementById("sem-resultados")
