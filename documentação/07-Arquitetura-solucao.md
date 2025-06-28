@@ -4,77 +4,143 @@
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-![Arquitetura da solução](images/exemplo-arquitetura.png)
+![Arquitetura da solução](images/arquitetura.png)
 
 ## Funcionalidades
 
 Esta seção apresenta as funcionalidades da solução.
 
-##### Funcionalidade 1 - Cadastro de contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Cadastro de Pessoas
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite cadastrar pessoas desaparecidas ou encontradas com informações detalhadas e fotos
 
-* **Estrutura de dados:** [Contatos](#estrutura-de-dados---contatos)
+* **Estrutura de dados:** [Cadastro de Pessoas](#estrutura-de-dados---Desaparecidos)
 * **Instruções de acesso:**
-  * Abra o site e efetue o login;
-  * Acesse o menu principal e escolha a opção "Cadastros";
-  * Em seguida, escolha a opção "Contatos".
+  * Acesse o menu principal e selecione "Cadastrar";
+  * Escolha o tipo de registro (Desaparecida/Encontrada);
+  * Preencha todos os campos obrigatórios.
+  * Envie o formulário.
 * **Tela da funcionalidade**:
 
-![Tela de funcionalidade](images/exemplo-funcionalidade.png)
+![Tela de funcionalidade](images/cadastrarPessoaDesaparecida.jpg)
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários, quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) títulos e descrição da funcionalidade; (2) estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+##### Funcionalidade 2 - Busca de pessoas desaparecidas
+
+Sistema de busca avançada com filtros por características físicas e localização
+
+* **Estrutura de dados:** [Busca de pessoas](#estrutura-de-dados---Desaparecidos)
+* **Instruções de acesso:**
+  * Acesse a página "Procurar" no menu;
+  * Utilize os filtros disponíveis;
+  * Visualize os resultados na lista.
+* **Tela da funcionalidade**:
+
+![Tela de funcionalidade](images/procurarPessoaDesaparecida.jpg)
+
+##### Funcionalidade 3 - Autenticação
+
+Sistema seguro de login e registro de usuários
+
+* **Estrutura de dados:** [Autenticação](#estrutura-de-dados---Usuários)
+* **Instruções de acesso:**
+  * Acesse "Login" no menu;
+  * Insira suas credenciais;
+  * Para novos usuários, acesse "Registrar".
+* **Tela da funcionalidade**:
+
+![Tela de funcionalidade](images/login.jpg)
+![Tela de funcionalidade](images/cadastroUsuario.jpg)
+
+##### Funcionalidade 4 - Visualização de Pessoas Encontradas
+
+Exibe casos recentes de pessoas que foram localizadas com sucesso
+
+* **Estrutura de dados:** [Pessoas Encontradas](#estrutura-de-dados---Encontrados)
+* **Instruções de acesso:**
+  * Acesse o menu principal e selecione "Encontrados";
+  * Utilize os filtros para buscar casos específicos;
+  * Visualize os detalhes de cada caso.
+* **Tela da funcionalidade**:
+
+![Tela de funcionalidade](images/pessoasEncontradas.jpg)
+
+##### Funcionalidade 5 - Visualização de Casos Resolvidos
+
+Mostra estatísticas e históricos completos de casos solucionados
+
+* **Estrutura de dados:** [Casos Resolvidos](#estrutura-de-dados---Resolvidos)
+* **Instruções de acesso:**
+  * Acesse o menu principal e selecione "Casos Resolvidos";
+  * Filtre por localização, ano ou tipo de resultado;
+  * Consulte as estatísticas gerais.
+* **Tela da funcionalidade**:
+
+![Tela de funcionalidade](images/casosResolvidos.jpg)
 
 ### Estruturas de dados
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info.
 
-##### Estrutura de dados - Contatos
+##### Estrutura de dados - Desaparecidos
 
-Contatos da aplicação
+Dados das pessoas desaparecidas que são cadastradas
 
 ```json
   {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
+    "id": "1",
+    "nome": "Emilio Jose",
+    "idade": 63,
+    "genero": "Masculino",
+    "altura": "175cm",
+    "localizacao": "Centro",
+    "status": "desaparecida"
   }
   
 ```
 
-##### Estrutura de dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Estrutura de dados - Usuários 
 
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema.
+Sistema seguro de login e registro de usuários.
 
 ```json
   {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
+    "id": "1",
+    "nome": "Admin Sistema",
+    "email": "admin@encontreme.com",
+    "telefone": "(31) 99999-9999",
+    "senha": "123456",
+    "dataRegistro": "2025-06-01",
+    "ativo": true
   }
 ```
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação, quanto outras estruturas que foram criadas para algum tipo de configuração.
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
-> **Orientações:**
->
-> * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
-> * [Trabalhando com JSON - Aprendendo desenvolvimento web | MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
+##### Estrutura de dados - Encontrados
+
+Informações armazenadas e qeu devem ser fornecidas para pesquisar indivíduos encontrados.
+
+```json
+  {
+    "id": "1",
+    "nome": "João Pedro",
+    "dataEncontrada": "2025-01-20",
+    "diasDesaparecida": 5,
+    "historia": "Encontrado em hospital após acidente"
+  }
+```
+
+##### Estrutura de dados - Resolvidos
+
+Informações armazenadas e qeu devem ser fornecidas para pesquisar casos resolvidos.
+
+```json
+  {
+    "id": "1",
+    "nome": "Carlos Mendes",
+    "dataResolucao": "2025-01-25",
+    "diasDesaparecida": 15,
+    "resultado": "encontrado_seguro"
+  }
+```
 
 ### Módulos e APIs
 
@@ -82,28 +148,18 @@ Esta seção apresenta os módulos e APIs utilizados na solução.
 
 **Images**:
 
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
+* Unsplash - [https://unsplash.com/](https://unsplash.com/)
 
 **Fonts:**
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
+* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/)
 
 **Scripts:**
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+* jQuery - [http://www.jquery.com/](http://www.jquery.com/)
+* Bootstrap 5 - [http://getbootstrap.com/](http://getbootstrap.com/)
 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foram realizados.
-
-> **Links úteis**:
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando seu site no Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+A hospedagem foi realizada via GitHub Pages, com backend simulado via JSON Server local.

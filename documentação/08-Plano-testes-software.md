@@ -10,22 +10,62 @@ Não deixe de enumerar os casos de teste de forma sequencial e garantir que o(s)
 
 Por exemplo:
 
-| **Caso de teste**  | **CT-001 – Cadastrar perfil**  |
+| **Caso de teste**  | **CT-001 – Cadastrar pessoa desaparecida**  |
 |:---: |:---: |
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
-| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-| Critério de êxito | - O cadastro foi realizado com sucesso. |
+| Requisito associado | RF-001 - O sistema deve permitir o cadastro de pessoas desaparecidas com informações detalhadas. |
+| Objetivo do teste | Verificar se o usuário consegue cadastrar uma pessoa desaparecida com todas as informações necessárias. |
+| Passos | - Acessar a página de cadastro <br> - Selecionar "Pessoa Desaparecida" <br> - Preencher os campos obrigatórios (nome, idade, gênero) <br> - Adicionar foto <br> - Preencher informações do desaparecimento (data, local) <br> - Inserir informações de contato <br> - Clicar em "Cadastrar Pessoa" |
+| Critério de êxito | - O cadastro foi realizado com sucesso e os dados são exibidos corretamente. |
 | Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
 
 <br>
 
-| **Caso de teste**  | **CT-002 – Efetuar login**  |
+| **Caso de teste**  | **CT-002 – Pesquisar pessoas desaparecidas**  |
 |:---: |:---: |
-| Requisito associado | RF-00Y - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do teste | Verificar se o usuário consegue realizar login. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
-| Critério de êxito | - O login foi realizado com sucesso. |
+| Requisito associado | RF-002 - O sistema deve permitir a busca de pessoas desaparecidas com filtros. |
+| Objetivo do teste | Verificar se o usuário consegue buscar pessoas desaparecidas utilizando filtros. |
+| Passos | - Acessar a página de pesquisa <br> - Inserir um termo de busca <br> - Aplicar filtros (gênero, faixa etária, bairro) <br> - Clicar em "Buscar"|
+| Critério de êxito | - Os resultados são exibidos corretamente de acordo com os filtros aplicados. |
+| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+
+<br>
+
+| **Caso de teste**  | **CT-003 – Registrar pessoa encontrada**  |
+|:---: |:---: |
+| Requisito associado | RF-003 - O sistema deve permitir o registro de pessoas encontradas. |
+| Objetivo do teste | Verificar se o usuário consegue registrar uma pessoa que foi encontrada. |
+| Passos | - Acessar a página de cadastro <br> - Selecionar "Pessoa Encontrada" <br> - - Preencher os campos obrigatórios <br> - Adicionar informações sobre como foi encontrada <br> - Clicar em "Cadastrar Pessoa"|
+| Critério de êxito | - O registro foi realizado com sucesso e a pessoa aparece na lista de encontrados. |
+| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+
+<br>
+
+| **Caso de teste**  | **CT-004 – Visualizar casos resolvidos**  |
+|:---: |:---: |
+| Requisito associado | RF-004 - O sistema deve exibir estatísticas e históricos de casos resolvidos. |
+| Objetivo do teste | Verificar se o usuário consegue visualizar os casos resolvidos e suas estatísticas. |
+| Passos | - Acessar a página de casos resolvidos <br> - Verificar a lista de casos <br> - - Aplicar filtros <br> - Verificar as estatísticas exibidas|
+| Critério de êxito | - Os casos são exibidos corretamente e as estatísticas são calculadas adequadamente. |
+| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+
+<br>
+
+| **Caso de teste**  | **CT-005 – Realizar login**  |
+|:---: |:---: |
+| Requisito associado | RF-005 - O sistema deve permitir o login de usuários cadastrados. |
+| Objetivo do teste | Verificar se o usuário consegue realizar login no sistema. |
+| Passos | - Acessar a página de login <br> - Inserir e-mail e senha válidos <br> - Clicar em "Entrar"|
+| Critério de êxito | - O login é realizado com sucesso e o usuário é redirecionado para a página inicial. |
+| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+
+<br>
+
+| **Caso de teste**  | **CT-006 – Criar conta de usuário**  |
+|:---: |:---: |
+| Requisito associado | RF-006 - O sistema deve permitir o cadastro de novos usuários. |
+| Objetivo do teste | Verificar se o usuário consegue criar uma nova conta no sistema. |
+| Passos | - Acessar a página de registro <br> - Preencher os campos obrigatórios (nome, e-mail, telefone, senha) <br> - Aceitar os termos de uso <br> - Clicar em "Criar Conta"|
+| Critério de êxito | - A conta é criada com sucesso e o usuário pode realizar login. |
 | Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
 
 
@@ -33,10 +73,4 @@ Por exemplo:
 
 Comente sobre as ferramentas de testes utilizadas.
  
-> **Links úteis**:
-> - [IBM - criação e geração de planos de teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e técnicas de testes ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> - [Teste de software: conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e geração de planos de teste de software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de teste para JavaScript](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+

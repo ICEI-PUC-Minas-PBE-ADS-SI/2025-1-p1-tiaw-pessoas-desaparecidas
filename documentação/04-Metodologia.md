@@ -1,4 +1,3 @@
-
 # Metodologia
 
 <span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
@@ -15,7 +14,19 @@ Concluído: Tarefas finalizadas e testadas, prontas para serem lançadas.
 
 ## Relação de ambientes de trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos deverá ser apresentada em uma tabela que especifique e detalhe Ambiente, Plataforma e Link de Acesso. Defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. A relação dos ambientes com seus respectivos propósitos é apresentada abaixo:
+
+| **Ambiente**       | **Plataforma**   | **Link de Acesso**                     | **Propósito**                                                                 |
+|---------------------|------------------|----------------------------------------|-------------------------------------------------------------------------------|
+| Repositório de Código | GitHub          | [https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-pessoas-desaparecidas.git](#)              | Versionamento do código-fonte e colaboração                                   |
+| Documentação        | GitHub           | [https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-pessoas-desaparecidas.git](#)             | Centralização de requisitos, decisões técnicas e documentação do projeto      |
+| Design UI/UX        | Figma            | [https://www.figma.com/design/KdgA4h8D3LDyocbCEekv96/Untitled?node-id=0-1&t=k0xFDjMdqvtP3JXR-1](#)                | Prototipagem de interfaces e fluxos de usuário                               |
+| Comunicação         | Whatsapp            | Canal privado                         | Comunicação diária da equipe e alinhamentos                                  |
+| Gerenciamento       | GitHub Projects  | [https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/71](#)                  | Acompanhamento de tarefas e sprints                                          |                               |
+
+**Ambientes e frameworks para desenvolvimento móvel**:
+- **Frontend**: HTML/CSS/JAVASCRYPT
+- **Backend**: Node.js
 
 ## Controle de versão
 
@@ -35,45 +46,43 @@ Quanto à gerência de issues, o projeto adota a seguinte convenção para etiqu
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gestão de tags, merges, commits e branches é realizada. Discuta também como a gestão de issues foi feita.
+### Configuração do Projeto no GitHub
+1. **Branches**:
+   - Feature branches são criadas a partir de `dev` (ex: `feat/login`).
+   - Merge em `main` apenas via Pull Request aprovado.
+2. **Tags**: Versões estáveis marcadas com `git tag v1.0.0`.
+3. **Automações**:
+   - GitHub Actions para testes em cada PR.
+   - Branch protection em `main` e `dev`.
 
-> **Links úteis**:
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e GitHub](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
-> - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+### Gestão de Issues
+- **Templates**: Modelos padronizados para bugs e features.
+- **Atribuição**: Issues associadas a membros específicos.
+- **Rastreamento**: Labels usadas para filtrar por prioridade.
 
 ## Planejamento do projeto
 
-###  Divisão de papéis
-
+### Divisão de papéis
 
 - Scrum Master: Lucas Marinho Blon Rocha
 - Product Owner: Matheus Souto dos Santos
 - Equipe de Desenvolvimento: Lucas Marinho Blon Rocha, Matheus Souto dos Santos, Guilherme Cândido Vidulino, Lucas Vinicius de Castro Oliveira	
 - Equipe de Design: Lucas Marinho Blon Rocha, Matheus Souto dos Santos, Guilherme Cândido Vidulino, Lucas Vinicius de Castro Oliveira		
 
-> **Links úteis**:
-> - [11 passos essenciais para implantar Scrum no seu projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
-
 ### Processo
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
+#### 1. Design Thinking
+- **Etapas**:
+  1. Pesquisa com usuários (entrevistas).
+  2. Prototipação no Figma.
+  3. Testes iterativos.
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, o GitHub Projects, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. 
-
-Coloque uma imagem da estrutura da ferramenta de controle de tarefas (Kanban) e o link do GitHub Projects.
- 
-> **Links úteis**:
-> - [GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [Planejamento e gestão ágil de projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Como criar backlogs no GitHub](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial slack](https://slack.com/intl/en-br/)
+#### 2. Scrum
+- **Sprints**: Ciclos de 2 semanas.
+- **Daily Meetings**: Atualizações via whatsapp.
+- **GitHub Projects**:
+  ![Quadro Kanban](images/QuadroKanban.jpg)
+  **Link**: [GitHub Projects](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/71)
 
 ### Ferramentas
 
