@@ -30,7 +30,6 @@
 > - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
 
 
-### Protótipo Interativo
+### Link Interativo
 
->
-> Um protótipo interativo apresenta o projeto das interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse utilizando o software finalizado. Utilize as mesmas ferramentas de criação de wireframes para a montagem do seu protótipo interativo. Inclua o link para o protótipo interativo do projeto.
+https://icei-puc-minas-pbe-ads-si.github.io/2025-1-p1-tiaw-pessoas-desaparecidas/index.html

@@ -16,7 +16,7 @@ Por exemplo:
 | Objetivo do teste | Verificar se o usuário consegue cadastrar uma pessoa desaparecida com todas as informações necessárias. |
 | Passos | - Acessar a página de cadastro <br> - Selecionar "Pessoa Desaparecida" <br> - Preencher os campos obrigatórios (nome, idade, gênero) <br> - Adicionar foto <br> - Preencher informações do desaparecimento (data, local) <br> - Inserir informações de contato <br> - Clicar em "Cadastrar Pessoa" |
 | Critério de êxito | - O cadastro foi realizado com sucesso e os dados são exibidos corretamente. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste | Lucas Marinho |
 
 <br>
 
@@ -26,7 +26,7 @@ Por exemplo:
 | Objetivo do teste | Verificar se o usuário consegue buscar pessoas desaparecidas utilizando filtros. |
 | Passos | - Acessar a página de pesquisa <br> - Inserir um termo de busca <br> - Aplicar filtros (gênero, faixa etária, bairro) <br> - Clicar em "Buscar"|
 | Critério de êxito | - Os resultados são exibidos corretamente de acordo com os filtros aplicados. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste | Lucas Marinho |
 
 <br>
 
@@ -36,7 +36,7 @@ Por exemplo:
 | Objetivo do teste | Verificar se o usuário consegue registrar uma pessoa que foi encontrada. |
 | Passos | - Acessar a página de cadastro <br> - Selecionar "Pessoa Encontrada" <br> - - Preencher os campos obrigatórios <br> - Adicionar informações sobre como foi encontrada <br> - Clicar em "Cadastrar Pessoa"|
 | Critério de êxito | - O registro foi realizado com sucesso e a pessoa aparece na lista de encontrados. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste | Lucas Marinho |
 
 <br>
 
@@ -46,7 +46,7 @@ Por exemplo:
 | Objetivo do teste | Verificar se o usuário consegue visualizar os casos resolvidos e suas estatísticas. |
 | Passos | - Acessar a página de casos resolvidos <br> - Verificar a lista de casos <br> - - Aplicar filtros <br> - Verificar as estatísticas exibidas|
 | Critério de êxito | - Os casos são exibidos corretamente e as estatísticas são calculadas adequadamente. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste | Lucas Marinho |
 
 <br>
 
@@ -56,7 +56,7 @@ Por exemplo:
 | Objetivo do teste | Verificar se o usuário consegue realizar login no sistema. |
 | Passos | - Acessar a página de login <br> - Inserir e-mail e senha válidos <br> - Clicar em "Entrar"|
 | Critério de êxito | - O login é realizado com sucesso e o usuário é redirecionado para a página inicial. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste | Lucas Marinho |
 
 <br>
 
@@ -66,11 +66,8 @@ Por exemplo:
 | Objetivo do teste | Verificar se o usuário consegue criar uma nova conta no sistema. |
 | Passos | - Acessar a página de registro <br> - Preencher os campos obrigatórios (nome, e-mail, telefone, senha) <br> - Aceitar os termos de uso <br> - Clicar em "Criar Conta"|
 | Critério de êxito | - A conta é criada com sucesso e o usuário pode realizar login. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste | Lucas Marinho |
 
 
-## Ferramentas de testes (opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
  
 

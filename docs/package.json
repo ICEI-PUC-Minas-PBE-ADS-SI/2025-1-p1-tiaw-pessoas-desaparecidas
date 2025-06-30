@@ -1,22 +1,12 @@
 {
-  "name": "encontreme-vercel",
+  "name": "encontreme",
   "version": "1.0.0",
-  "description": "Sistema EncontreMe no Vercel",
-  "main": "index.html",
+  "description": "Sistema EncontreMe",
   "scripts": {
-    "start": "vercel dev",
-    "dev": "vercel dev",
-    "build": "echo 'Build concluído'"
+    "start": "npx json-server --watch docs/data/db.json --port 3000 --static public"
   },
   "dependencies": {
-    "json-server": "^0.17.4",
-    "express": "^4.18.2",
-    "cors": "^2.8.5"
-  },
-  "devDependencies": {
-    "vercel": "^32.0.0"
-  },
-  "engines": {
-    "node": "18.x"
+    "json-server": "^0.17.4"
   }
 }
+

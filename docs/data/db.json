@@ -181,6 +181,28 @@
       "status": "desaparecida",
       "dataRegistro": "2025-06-27",
       "faixaEtaria": "0-18"
+    },
+    {
+      "id": "44b3",
+      "nome": "Pedro Henrique Pimenta",
+      "idade": 19,
+      "genero": "Masculino",
+      "altura": "179cm",
+      "peso": "85kg",
+      "corOlhos": "Castanhos",
+      "corCabelo": "Preto",
+      "localizacao": "Novo Guarujá",
+      "bairro": "Novo Guarujá",
+      "foto": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      "descricao": "Feição jovem, tatuagem no braço de um tigre, corpo malhado ",
+      "ultimaVezVisto": "2025-06-28",
+      "localUltimaVezVisto": "Rua Campo Belo, 203",
+      "circunstancias": "Foi  a padaria buscar pão e não retornou",
+      "nomeContato": "Jessica Pimenta",
+      "telefoneContato": "(31) 98765-4321",
+      "status": "desaparecida",
+      "dataRegistro": "2025-06-30",
+      "faixaEtaria": "18-30"
     }
   ],
   "pessoas-encontradas": [
@@ -248,6 +270,17 @@
       "dataEncontrada": "2025-01-08",
       "diasDesaparecida": 8,
       "historia": "Retornou para casa após resolver questões pessoais. Família notificada. Lucia havia viajado para cuidar de um parente doente em outra cidade e não conseguiu avisar a tempo.",
+      "status": "encontrada"
+    },
+    {
+      "id": "3e7a",
+      "nome": "Rosimaria Santos",
+      "idade": 26,
+      "localizacao": "Centro",
+      "foto": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop&crop=face",
+      "dataEncontrada": "2025-06-12",
+      "diasDesaparecida": 3,
+      "historia": "Encontrada no Hospital com marcas de agressão",
       "status": "encontrada"
     }
   ],
@@ -357,6 +390,15 @@
       "telefone": "(31) 99999-9999",
       "senha": "123456",
       "dataRegistro": "2025-06-01",
+      "ativo": true
+    },
+    {
+      "id": "9176",
+      "nome": "lucas marinho",
+      "email": "lm@encontreme.com",
+      "telefone": "(31) 99999-9999",
+      "senha": "123456",
+      "dataRegistro": "2025-06-30",
       "ativo": true
     }
   ]
